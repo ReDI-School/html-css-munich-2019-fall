@@ -1,0 +1,197 @@
+<html>
+
+<head>
+	<title>ReDI HTML/CSS Orientation</title>
+	<link rel="stylesheet" href="../../assets/js/reveal.js/css/reveal.css">
+	<link rel="stylesheet" href="../../assets/js/reveal.js/css/theme/white.css">
+	<link rel="stylesheet" href="../../assets/js/reveal.js/lib/css/zenburn.css">
+	<link rel="JavaScript" href="../../assets/js/reveal.js/plugin/markdown/marked.js">
+	<link rel="JavaScript" href="../../assets/js/reveal.js/plugin/markdown/markdown.js">
+	<link rel="stylesheet" href="../../assets/css/global.css">
+</head>
+
+<body>
+	<a href="https://www.redi-school.org/"><img src="../../assets/img/redi-school-logo.jpg" class="logo" /></a>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<h1>Intro to JavaScript</h1><link rel="stylesheet" href="../../reveal.js/css/reveal.css">
+				<h3>🚀 ReDI Fall 2018 🚀</h3>
+			</section>
+			<section>
+				<h2>Welcome! 👋</h2>
+				<p>Let's talk about JavaScript</p>
+			</section>
+			<section>
+				<h3>Why JavaScript? 🤔</h3>
+				<img src="../../assets/img/so-dev-survey-header.png" class="illustration">
+				<a href="https://insights.stackoverflow.com/survey/2018/#technology">Source</a>
+			</section>
+			<section>
+				<section>
+					<img src="assets/so-pop-lang.png" class="illustration" />
+				</section>
+			</section>
+
+			<section>
+				<h3>History of JavaScript 📖</h3>
+				<ul>
+					<li class="fragment">Written at Netscape in 1995</li>
+					<li class="fragment">Appears in all browsers since 1996</li>
+					<li class="fragment">Standardized by Ecma since 1998 (ECMAScript/ES)</li>
+					<li class="fragment">Used by all modern websites</li>
+					<li class="fragment">Constantly evolving</li>
+				</ul>
+			</section>
+
+			<section>
+				<h3>What can you do with JS? 💪</h3>
+				<ul>
+					<li class="fragment">Dynamic web pages</li>
+					<li class="fragment">Web Servers </li>
+					<li class="fragment"><b>Any kind of program, actually! 😲</b></li>
+				</ul>
+				<br><br>
+				<p class="fragment"><i>We focus on web pages for now.</i> 💻</p>
+			</section>
+
+			<section>
+				<h3>But what does that mean? 🤷‍♀️</h3>
+				<p>(see whiteboard)</p>
+				<!-- Here we explain client, server, browser, etc. -->
+			</section>
+
+			<section>
+				<img src="assets/browser_war.png" class="illustration" />
+				<p class="fragment">(please, use Chrome or Firefox! 😆)</p>
+			</section>
+
+			<section>
+				<ul>
+					<li>It's <b>hard</b> to make your website work for all browsers. ☹️</li>
+					<li class="fragment">We will teach you the <b>newest standards</b>! 😲</li>
+					<li class="fragment">There are <b>ways</b> to make your <b>new</b> code work with <b>older</b> browsers. 😀</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Setting up... 🏭</h2>
+				<ul>
+					<li>Editor: Atom / VSCode</li>
+					<li>Browser: Chrome</li>
+					<li>Communication: Slack</li>
+					<li>Folder structure!</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Let's start! 🎬</h2>
+				<ul>
+					<li>Open your Chrome</li>
+					<li>Press Ctrl + Shift + J</li>
+					<li class="fragment"><pre><code>alert("Hello World");</code></pre></li>
+					<!-- Talk about how common this pattern is. Function(arguments) -->
+					<li class="fragment"><pre><code>prompt("What's your name?");</code></pre></li>
+					<li class="fragment"><pre><code>20 * 5 + 33.888;</code></pre></li>
+					<li class="fragment"><b>Exercise:</b> Show alert that says "Hi, my name is ..."</li>
+				</ul>
+			</section>
+
+			<section>
+				<ul>
+					<li>Assume you want to ask for the user's name,<br> then reply "Hello Susan!"</li>
+					<li class="fragment">How can you do that? 🤔</li>
+					<!-- Let them think for a bit -->
+					<li class="fragment">→ You need a way to store the name! 💡</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Variables...</h2>
+				<ul>
+					<li class="fragment">are like <b>boxes</b> 📦</li>
+					<li class="fragment">you can <b>put stuff into</b> 📥</li>
+					<li class="fragment">and <b>retrieve it</b> later! 📤</li>
+				</ul>
+			</section>
+
+			<section>
+				<ul>
+					<li><pre><code>let name;</code></pre></li>
+					<li class="fragment"><pre><code>alert(name);</code></pre></li>
+					<li class="fragment"><pre><code>name;</code></pre></li>
+					<li class="fragment"><pre><code>name = "Max";</code></pre></li>
+					<li class="fragment"><pre><code>name = "Grace";</code></pre></li>
+					<li class="fragment"><pre><code>name = prompt("What's your name?");</code></pre></li>
+					<li class="fragment"><pre><code>alert("Hi " + name + "!");</code></pre></li>
+				</ul>
+				<p class="fragment">
+					<b>Exercise:</b> Ask for the age, then answer:<br>
+					"You are ... years old"
+				</p>
+			</section>
+
+			<section>
+				<h3>Let's save this to a file!</h3>
+				<!-- Create a .html and .js file together. See subdirectory. -->
+			</section>
+
+			<section>
+				<p>
+					<pre><code>let name;
+name = prompt("What's your name?");
+alert("Hi " + name + "!");</code></pre>
+				</p>
+				<p class="fragment">
+					<br>
+					Shorter:
+					<pre class="fragment"><code>let name = prompt("What's your name?");
+alert("Hi " + name + "!");</code></pre>
+				</p>
+				<p class="fragment">
+					<br>
+					Even shorter:
+					<pre class="fragment"><code>alert("Hi " + prompt("What's your name?") + "!");</code></pre>
+				</p>
+				<p class="fragment">
+					<br>
+					Why? 🤔
+				</p>
+				<p class="fragment">
+					Is it better?
+				</p>
+			</section>
+
+			<section>
+				<h3>Homework 😱</h3>
+				<ul>
+					<li><b>Ask the user</b> about their hobbies, home country, etc.</li>
+					<li>At the end, give the user a summary of <b>everything you have learnt about them</b>!</li>
+					<li>"Hi Max! You are 29 years old and from Germany! You like hiking, programming and cooking! etc"</li>
+					<li>If you have any <b>questions</b>, ask us on <b>Slack</b> 😊</li>
+				</ul>
+			</section>
+		</div>
+	</div>
+
+
+	<script src="../../assets/js/jquery-3.3.1.slim.min.js"></script>
+	<script src="../../assets/js/reveal.js/lib/js/head.min.js"></script>
+	<script src="../../assets/js/reveal.js/js/reveal.js"></script>
+	<script>
+		Reveal.initialize({
+			history: true,
+			dependencies: [
+				{ src: '../../reveal.js/plugin/highlight/highlight.js', async: false, callback: function () { hljs.initHighlightingOnLoad(); } },
+			]
+		});
+		// Make each code example executable by clicking it:
+		$(document).ready(function() {
+			$('code').click(function(event) {
+				console.info('Click!', $(this).text());
+				eval($(this).text());
+			});
+		});
+	</script>
+</body>
+</html>
