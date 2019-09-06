@@ -15,162 +15,50 @@
 	<div class="reveal">
 		<div class="slides">
 			<section>
-				<h1>Intro to JavaScript</h1><link rel="stylesheet" href="../../reveal.js/css/reveal.css">
-				<h3>🚀 ReDI Fall 2018 🚀</h3>
+				<h1>Intro to HTML/CSS</h1><link rel="stylesheet" href="../../reveal.js/css/reveal.css">
+				<h3>🚀 ReDI Fall 2019 🚀</h3>
 			</section>
 			<section>
 				<h2>Welcome! 👋</h2>
-				<p>Let's talk about JavaScript</p>
+				<p>Let's talk about HTML / CSS</p>
 			</section>
 			<section>
-				<h3>Why JavaScript? 🤔</h3>
+				<h3>Why HTML? 🤔</h3>
 				<img src="../assets/img/so-dev-survey-header.png" class="illustration">
 				<a href="https://insights.stackoverflow.com/survey/2018/#technology">Source</a>
 			</section>
 			<section>
 				<section>
-					<img src="../assets/img/assets/so-pop-lang.png" class="illustration" />
+					<img src="../assets/img/so-pop-lang.png" class="illustration" />
 				</section>
 			</section>
 
 			<section>
-				<h3>History of JavaScript 📖</h3>
+				<h3>Some History 📖</h3>
 				<ul>
-					<li class="fragment">Written at Netscape in 1995</li>
-					<li class="fragment">Appears in all browsers since 1996</li>
-					<li class="fragment">Standardized by Ecma since 1998 (ECMAScript/ES)</li>
-					<li class="fragment">Used by all modern websites</li>
-					<li class="fragment">Constantly evolving</li>
+					<li class="fragment">HTML was created by Sir Tim Berners-Lee in late <b>1991</b></li>
+					<li class="fragment">Base of EVERY website</li>
+					<li class="fragment">HTML / CSS works together</li>
 				</ul>
 			</section>
 
+
 			<section>
-				<h3>What can you do with JS? 💪</h3>
-				<ul>
-					<li class="fragment">Dynamic web pages</li>
-					<li class="fragment">Web Servers </li>
-					<li class="fragment"><b>Any kind of program, actually! 😲</b></li>
-				</ul>
-				<br><br>
-				<p class="fragment"><i>We focus on web pages for now.</i> 💻</p>
+				<h3>This a simple HTML example</h3>
+				<img src="../assets/img/html_example.png" class="illustration" />
 			</section>
 
 			<section>
-				<h3>But what does that mean? 🤷‍♀️</h3>
-				<p>(see whiteboard)</p>
-				<!-- Here we explain client, server, browser, etc. -->
+				<h3>Try to add CSS</h3>
+				<img src="../assets/img/html_css_example.png"   width="50%" class="illustration" />
+				
+			</section>	
+			
+			<section>
+				<a href="https://codepen.io/giulio-calzolari/pen/wvwrgqY">Click HERE and Try it</a>
 			</section>
 
-			<section>
-				<img src="../assets/img/assets/browser_war.png" class="illustration" />
-				<p class="fragment">(please, use Chrome or Firefox! 😆)</p>
-			</section>
-
-			<section>
-				<ul>
-					<li>It's <b>hard</b> to make your website work for all browsers. ☹️</li>
-					<li class="fragment">We will teach you the <b>newest standards</b>! 😲</li>
-					<li class="fragment">There are <b>ways</b> to make your <b>new</b> code work with <b>older</b> browsers. 😀</li>
-				</ul>
-			</section>
-
-			<section>
-				<h2>Setting up... 🏭</h2>
-				<ul>
-					<li>Editor: Atom / VSCode</li>
-					<li>Browser: Chrome</li>
-					<li>Communication: Slack</li>
-					<li>Folder structure!</li>
-				</ul>
-			</section>
-
-			<section>
-				<h2>Let's start! 🎬</h2>
-				<ul>
-					<li>Open your Chrome</li>
-					<li>Press Ctrl + Shift + J</li>
-					<li class="fragment"><pre><code>alert("Hello World");</code></pre></li>
-					<!-- Talk about how common this pattern is. Function(arguments) -->
-					<li class="fragment"><pre><code>prompt("What's your name?");</code></pre></li>
-					<li class="fragment"><pre><code>20 * 5 + 33.888;</code></pre></li>
-					<li class="fragment"><b>Exercise:</b> Show alert that says "Hi, my name is ..."</li>
-				</ul>
-			</section>
-
-			<section>
-				<ul>
-					<li>Assume you want to ask for the user's name,<br> then reply "Hello Susan!"</li>
-					<li class="fragment">How can you do that? 🤔</li>
-					<!-- Let them think for a bit -->
-					<li class="fragment">→ You need a way to store the name! 💡</li>
-				</ul>
-			</section>
-
-			<section>
-				<h2>Variables...</h2>
-				<ul>
-					<li class="fragment">are like <b>boxes</b> 📦</li>
-					<li class="fragment">you can <b>put stuff into</b> 📥</li>
-					<li class="fragment">and <b>retrieve it</b> later! 📤</li>
-				</ul>
-			</section>
-
-			<section>
-				<ul>
-					<li><pre><code>let name;</code></pre></li>
-					<li class="fragment"><pre><code>alert(name);</code></pre></li>
-					<li class="fragment"><pre><code>name;</code></pre></li>
-					<li class="fragment"><pre><code>name = "Max";</code></pre></li>
-					<li class="fragment"><pre><code>name = "Grace";</code></pre></li>
-					<li class="fragment"><pre><code>name = prompt("What's your name?");</code></pre></li>
-					<li class="fragment"><pre><code>alert("Hi " + name + "!");</code></pre></li>
-				</ul>
-				<p class="fragment">
-					<b>Exercise:</b> Ask for the age, then answer:<br>
-					"You are ... years old"
-				</p>
-			</section>
-
-			<section>
-				<h3>Let's save this to a file!</h3>
-				<!-- Create a .html and .js file together. See subdirectory. -->
-			</section>
-
-			<section>
-				<p>
-					<pre><code>let name;
-name = prompt("What's your name?");
-alert("Hi " + name + "!");</code></pre>
-				</p>
-				<p class="fragment">
-					<br>
-					Shorter:
-					<pre class="fragment"><code>let name = prompt("What's your name?");
-alert("Hi " + name + "!");</code></pre>
-				</p>
-				<p class="fragment">
-					<br>
-					Even shorter:
-					<pre class="fragment"><code>alert("Hi " + prompt("What's your name?") + "!");</code></pre>
-				</p>
-				<p class="fragment">
-					<br>
-					Why? 🤔
-				</p>
-				<p class="fragment">
-					Is it better?
-				</p>
-			</section>
-
-			<section>
-				<h3>Homework 😱</h3>
-				<ul>
-					<li><b>Ask the user</b> about their hobbies, home country, etc.</li>
-					<li>At the end, give the user a summary of <b>everything you have learnt about them</b>!</li>
-					<li>"Hi Max! You are 29 years old and from Germany! You like hiking, programming and cooking! etc"</li>
-					<li>If you have any <b>questions</b>, ask us on <b>Slack</b> 😊</li>
-				</ul>
-			</section>
+			
 		</div>
 	</div>
 
