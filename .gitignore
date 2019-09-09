@@ -73,3 +73,6 @@ $RECYCLE.BIN/
 
 # IntelliJ IDE
 /.idea
+
+# Visual Code
+.history

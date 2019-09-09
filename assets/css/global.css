@@ -7,8 +7,10 @@
 }
 
 .illustration {
-    border: 0px
+    border: 0px;
 }
+
+
 
 .reveal li {
     margin-bottom: 0.5em;
@@ -29,4 +31,19 @@
 .logo {
     position: fixed; /* Sit on top of the page content */
     z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+}
+
+.reveal section img.teacher_img {
+    width: 120px;
+    height: 120px;
+    border: none;
+}  
+.teacher_names {
+    display: flex;
+    justify-content: center;
+    
+}
+.teacher_names div{
+    width: 130px;
+    font-size: 16px;
 }
